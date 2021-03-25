@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style type="text/css">
+    div{
+        height: 350px;
+        width: 350px;
+        border: 5px solid black;
+        box-sizing:border-box;
+        margin: 0 auto;
+        padding: 100px;
+        background-image:url(Img.jpg);
+        }
+     </style>    
+</head>
+<body>
+     <center><h1>Welcome to my Login page<h1></center>
+     <hr>
+     <div>
+         User Name:<br>
+         <input type="text" name="text" id="username">
+         <br><br>
+         Password:<br>
+         <input type="password" name="text" id="password">
+         <br><br>
+         <button onclick="login()">SUBMIT</button>
+     </div>
+     <script type="text/javascript">
+        function login()
+        {
+          var user = document.getElementById('username').value;
+          var pass = document.getElementById('password').value;
+          if(user=="Anmol" && pass=="123")
+          {
+            location.assign("file:///C:/Users/mti%20unnao/Desktop/My%20Project%20Git/Content.html");
+          }  
+          else
+          {
+              window.alert("login failed!");
+          }
+        }
+   </script>   
+</body>
+</html>
